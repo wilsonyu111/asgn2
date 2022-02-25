@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>asgn1</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="asgn2" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+
+    <div class="animation_control">
+        <button type="button" id = "animation_control" onclick="animation()">animation</button> <h4>(or shift + click to turn on or off alternative animation)</h4>
+    </div>
+
+    <br>
+    <div class="motion_control">
+        <div class="motion control" style="display: flex;">
+          <h4>Leg</h4> <input type="range" min="-30" max="30" value="0" id="leg">
+          <h4>arm and hand</h4> <input type="range" min="-50" max="50" value="0" id="arm">
+          <h4>left feet</h4> <input type="range" min="-35" max="35" value="0" id="Lfeet">
+          <h4>right feet</h4> <input type="range" min="-35" max="35" value="0" id="Rfeet">
+        </div>
+        <div class="shapes" style="display: flex;">
+            <h4>camera angle </h4> <input type="range" min="0" max="360" value="0" id="camera_angle">
+            <br> <h4>(or hold and drag on canvas)</h4>
+        </div>
+
+    </div>
+
+    <div class="color">
+      <div class="body color">
+        <h3>body color</h3>
+        <div style="display: flex;">
+          <h4>red</h4> <input type="range" min="0" max="100" value="40" id="body_red">
+          <h4>green</h4> <input type="range" min="0" max="100" value="30" id="body_green">
+          <h4>blue</h4> <input type="range" min="0" max="100" value="20" id="body_blue">
+        </div>
+        
+        <h3>arm color</h3>
+        <div style="display: flex;">
+          <h4>red</h4> <input type="range" min="0" max="100" value="70" id="arm_red">
+          <h4>green</h4> <input type="range" min="0" max="100" value="60" id="arm_green">
+          <h4>blue</h4> <input type="range" min="0" max="100" value="50" id="arm_blue">
+        </div>
+
+        <h3>leg color</h3>
+        <div style="display: flex;">
+          <h4>red</h4> <input type="range" min="0" max="100" value="39" id="leg_red">
+          <h4>green</h4> <input type="range" min="0" max="100" value="20" id="leg_green">
+          <h4>blue</h4> <input type="range" min="0" max="100" value="18" id="leg_blue">
+        </div>
+
+        <h3>feet color</h3>
+        <div style="display: flex;">
+          <h4>red</h4> <input type="range" min="0" max="100" value="60" id="feet_red">
+          <h4>green</h4> <input type="range" min="0" max="100" value="30" id="feet_green">
+          <h4>blue</h4> <input type="range" min="0" max="100" value="29" id="feet_blue">
+        </div>
+
+      </div>
+    </div>
+
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix.js"></script>
+    <script src="asgn2.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Circle.js"></script>
+    <script src="Square.js"></script>
+    <script src="Cube.js"></script>
+  </body>
+</html>
